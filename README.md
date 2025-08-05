@@ -37,7 +37,7 @@
 
 2、点击 "开发人员模式" 然后点击 "加载解压缩的扩展"
 
-<img src="./help/edge-2.png" width="90%" />
+<img src="./help/edge-2.png" width="100%" />
 
 3、选择解压后的文件夹即可
 
@@ -49,7 +49,7 @@
 
 火狐浏览器打开：https://addons.mozilla.org/zh-CN/firefox/addon/lovejs/
 
-<img src="./help/firefox-1.png" width="90%"/>
+<img src="./help/firefox-1.png" width="100%"/>
 
 <div>&nbsp;</div>
 
