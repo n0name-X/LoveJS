@@ -1,5 +1,5 @@
-<div style="display: flex; gap: 100px; align-items: center; justify-content: center;">
-  <img src="./help/p.gif" alt="" style="max-width: 100%; height: auto;zoom:45%;" />
+<div style="display: flex; gap: 20px; align-items: center; justify-content: center;">
+  <img src="./help/p.gif" alt="" style="max-width: 100%; height: auto;zoom:25%;" />
   <img src="./help/icon-256.png" alt="" style="max-width: 100%; height: auto;zoom:70%;" />
 </div>
 
