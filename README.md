@@ -61,7 +61,7 @@
 
 复制完整URL：把当前域名和接口进行拼接后的结果（可以自定义基础目录从而更加高效的测试）
 
-<img src="./help/use-1.png" width="90%" />
+<img src="./help/use-1.png" width="100%" />
 
 ## 批量打开URL
 
@@ -69,7 +69,7 @@
 
 可以把 "复制完整URL" 的结果直接粘贴在这里（推荐先把复制后的信息粘贴到记事本中，再分批批量打开）
 
-<img src="./help/use-2.png" width="90%"/>
+<img src="./help/use-2.png" width="100%"/>
 
 ## 自定义基础目录和域名黑名单
 
@@ -77,7 +77,7 @@
 
 域名黑名单：访问在黑名单中的域名将不做任何处理
 
-<img src="./help/use-3.png" width="90%"/>
+<img src="./help/use-3.png" width="100%"/>
 
 <div>&nbsp;</div>
 
