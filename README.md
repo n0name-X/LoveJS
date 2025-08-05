@@ -3,14 +3,13 @@
   <img src="./help/icon-256.png" width="35%" />
 </div>
 
-
 # 一、LoveJS 简介
 
 **LoveJS** 是一款帮助网络安全研究员获取页面和JS中的隐藏接口和敏感信息的浏览器插件，并且可以批量打开URL和自定义基础目录，可以帮助用户高效的进行API接口测试和漏洞挖掘
 
 同时支持 **Chrome**、**Firefox**、**Edge** 浏览器
 
-
+<div>&nbsp;</div>
 
 # 二、安装部署
 
@@ -52,7 +51,7 @@
 
 <img src="./help/firefox-1.png" width="80%"/>
 
-
+<div>&nbsp;</div>
 
 # 三、工具使用
 
@@ -80,7 +79,7 @@
 
 <img src="./help/use-3.png" width="80%"/>
 
-
+<div>&nbsp;</div>
 
 # 四、下个版本计划
 
