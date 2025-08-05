@@ -1,6 +1,6 @@
 <div style="display: flex; gap: 100px; align-items: center; justify-content: center;">
-  <img src="./img/p.gif" alt="" style="max-width: 100%; height: auto;zoom:45%;" />
-  <img src="./img/icon-256.png" alt="" style="max-width: 100%; height: auto;zoom:70%;" />
+  <img src="./help/p.gif" alt="" style="max-width: 100%; height: auto;zoom:45%;" />
+  <img src="./help/icon-256.png" alt="" style="max-width: 100%; height: auto;zoom:70%;" />
 </div>
 
 
@@ -20,7 +20,7 @@
 
 1、点击进入"管理扩展程序"
 
-<img src="./help/chrome-1.png" style="float: left; zoom: 33%;" />
+<img src="./help/chrome-1.png" style="float: left; zoom: 20%;" />
 
 2、打开 "开发者模式" 后点击 "加载未打包的扩展程序"
 
@@ -28,21 +28,21 @@
 
 3、选择解压后的文件夹即可
 
-<img src="./help/chrome-3.png" style="float: left; zoom: 50%;" />
+<img src="./help/chrome-3.png" style="float: left; zoom: 30%;" />
 
 ## Edge
 
 1、点击 "管理扩展"
 
-<img src="./help/edge-1.png" style="float: left;" />
+<img src="./help/edge-1.png" style="float: left; zoom: 33%;" />
 
 2、点击 "开发人员模式" 然后点击 "加载解压缩的扩展"
 
-<img src="D:\Code\LoveJS\chrome&edge\LoveJS_1.0_chrome&edge\help\edge-2.png" style="float: left;" />
+<img src="D:\Code\LoveJS\chrome&edge\LoveJS_1.0_chrome&edge\help\edge-2.png" style="float: left; zoom: 33%;" />
 
 3、选择解压后的文件夹即可
 
-<img src="D:\Code\LoveJS\chrome&edge\LoveJS_1.0_chrome&edge\help\edge-3.png" style="zoom: 50%;float: left;" />
+<img src="D:\Code\LoveJS\chrome&edge\LoveJS_1.0_chrome&edge\help\edge-3.png" style="zoom: 33%; float: left;" />
 
 ## Firefox
 
@@ -50,7 +50,7 @@
 
 火狐浏览器打开：https://addons.mozilla.org/zh-CN/firefox/addon/lovejs/
 
-<img src="./help/firefox-1.png" style="zoom: 50%;float: left;"/>
+<img src="./help/firefox-1.png" style="zoom: 33%; float: left;"/>
 
 
 
