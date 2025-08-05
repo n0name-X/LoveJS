@@ -1,6 +1,6 @@
-<div style="display: flex; gap: 20px; align-items: center; justify-content: center;">
-  <img src="./help/p.gif" alt="" style="max-width: 100%; height: auto;zoom:25%;" />
-  <img src="./help/icon-256.png" alt="" style="max-width: 100%; height: auto;zoom:70%;" />
+<div align="center">
+  <img src="./help/p.gif" width="38%" />
+  <img src="./help/icon-256.png" width="35%" />
 </div>
 
 
@@ -20,29 +20,29 @@
 
 1、点击进入"管理扩展程序"
 
-<img src="./help/chrome-1.png" style="float: left; zoom: 20%;" />
+<img src="./help/chrome-1.png" width="35%" />
 
 2、打开 "开发者模式" 后点击 "加载未打包的扩展程序"
 
-<img src="./help/chrome-2.png" style="float: left; zoom: 33%;" />
+<img src="./help/chrome-2.png" width="100%" />
 
 3、选择解压后的文件夹即可
 
-<img src="./help/chrome-3.png" style="float: left; zoom: 30%;" />
+<img src="./help/chrome-3.png" width="70%" />
 
 ## Edge
 
 1、点击 "管理扩展"
 
-<img src="./help/edge-1.png" style="float: left; zoom: 33%;" />
+<img src="./help/edge-1.png" width="60%" />
 
 2、点击 "开发人员模式" 然后点击 "加载解压缩的扩展"
 
-<img src="D:\Code\LoveJS\chrome&edge\LoveJS_1.0_chrome&edge\help\edge-2.png" style="float: left; zoom: 33%;" />
+<img src="./help/edge-2.png" width="80%" />
 
 3、选择解压后的文件夹即可
 
-<img src="D:\Code\LoveJS\chrome&edge\LoveJS_1.0_chrome&edge\help\edge-3.png" style="zoom: 33%; float: left;" />
+<img src="./help/edge-3.png" width="60%" />
 
 ## Firefox
 
@@ -50,7 +50,7 @@
 
 火狐浏览器打开：https://addons.mozilla.org/zh-CN/firefox/addon/lovejs/
 
-<img src="./help/firefox-1.png" style="zoom: 33%; float: left;"/>
+<img src="./help/firefox-1.png" width="80%"/>
 
 
 
@@ -62,7 +62,7 @@
 
 复制完整URL：把当前域名和接口进行拼接后的结果（可以自定义基础目录从而更加高效的测试）
 
-<img src="./help/use-1.png" style="zoom: 50%;float: left;" />
+<img src="./help/use-1.png" width="80%" />
 
 ## 批量打开URL
 
@@ -70,15 +70,15 @@
 
 可以把 "复制完整URL" 的结果直接粘贴在这里（推荐先把复制后的信息粘贴到记事本中，再分批批量打开）
 
-<img src="./help/use-2.png" style="zoom: 50%;float: left;"/>
+<img src="./help/use-2.png" width="80%"/>
 
 ## 自定义基础目录和域名黑名单
 
-自定义基础目录：例如填写 /api/ 后，再去 "复制完整URL"，原本的http://www.baidu.com/test?id=1就会变成http://www.baidu.com/api/test?id=1
+自定义基础目录：例如填写 /api/ 后，再去 "复制完整URL"，原本的 http://www.baidu.com/test?id=1 就会变成 http://www.baidu.com/api/test?id=1
 
 域名黑名单：访问在黑名单中的域名将不做任何处理
 
-<img src="./help/use-3.png" style="zoom: 50%;float: left;"/>
+<img src="./help/use-3.png" width="80%"/>
 
 
 
