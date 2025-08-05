@@ -23,7 +23,7 @@
 
 2、打开 "开发者模式" 后点击 "加载未打包的扩展程序"
 
-<img src="./help/chrome-2.png" width="100%" />
+<img src="./help/chrome-2.png" width="110%" />
 
 3、选择解压后的文件夹即可
 
@@ -33,11 +33,11 @@
 
 1、点击 "管理扩展"
 
-<img src="./help/edge-1.png" width="60%" />
+<img src="./help/edge-1.png" width="70%" />
 
 2、点击 "开发人员模式" 然后点击 "加载解压缩的扩展"
 
-<img src="./help/edge-2.png" width="80%" />
+<img src="./help/edge-2.png" width="90%" />
 
 3、选择解压后的文件夹即可
 
@@ -49,7 +49,7 @@
 
 火狐浏览器打开：https://addons.mozilla.org/zh-CN/firefox/addon/lovejs/
 
-<img src="./help/firefox-1.png" width="80%"/>
+<img src="./help/firefox-1.png" width="90%"/>
 
 <div>&nbsp;</div>
 
@@ -61,7 +61,7 @@
 
 复制完整URL：把当前域名和接口进行拼接后的结果（可以自定义基础目录从而更加高效的测试）
 
-<img src="./help/use-1.png" width="80%" />
+<img src="./help/use-1.png" width="90%" />
 
 ## 批量打开URL
 
@@ -69,7 +69,7 @@
 
 可以把 "复制完整URL" 的结果直接粘贴在这里（推荐先把复制后的信息粘贴到记事本中，再分批批量打开）
 
-<img src="./help/use-2.png" width="80%"/>
+<img src="./help/use-2.png" width="90%"/>
 
 ## 自定义基础目录和域名黑名单
 
@@ -77,7 +77,7 @@
 
 域名黑名单：访问在黑名单中的域名将不做任何处理
 
-<img src="./help/use-3.png" width="80%"/>
+<img src="./help/use-3.png" width="90%"/>
 
 <div>&nbsp;</div>
 
