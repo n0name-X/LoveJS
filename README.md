@@ -47,7 +47,7 @@
 
 由于火狐官方的要求，正式版插件无法本地安装，直接在火狐的插件商店搜索 "LoveJS" 即可
 
-火狐浏览器打开：https://addons.mozilla.org/zh-CN/firefox/addon/lovejs/
+火狐浏览器打开：https://addons.mozilla.org/zh-CN/firefox/addon/lovejs/（还在审核中...）
 
 <img src="./help/firefox-1.png" width="100%"/>
 
