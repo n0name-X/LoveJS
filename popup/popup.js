@@ -27,10 +27,12 @@ document.addEventListener('DOMContentLoaded', function () {
   const domainContainer = document.getElementById("domain_list");
   const urlContainer = document.getElementById("url_list");
   const ipContainer = document.getElementById("ip_list");
+  const sensitiveContainer = document.getElementById("sensitive_list"); // 敏感信息容器
 
   domainContainer.innerHTML = "";
   urlContainer.innerHTML = "";
   ipContainer.innerHTML = "";
+  sensitiveContainer.innerHTML = ""; // 初始化敏感信息容器
 
   chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
     const url = new URL(tabs[0].url);
@@ -44,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const domainList = result.domain_list || [];
       const jsUrlList = result.js_url_list || [];
       const ipList = result.ip_list || [];
+      const sensitiveInfo = result.sensitive_info || {}; // 获取敏感信息
       const isBlacklisted = result.isBlacklisted || false;
 
       const render = (container, items) => {
@@ -55,6 +58,50 @@ document.addEventListener('DOMContentLoaded', function () {
         });
       };
 
+      // 敏感信息渲染函数
+      const renderSensitive = (container, info) => {
+        container.innerHTML = "";
+        const types = {
+          email: "邮箱",
+          phone: "手机号",
+          aliyunKey: "阿里云key",
+          tencentKey: "腾讯云key",
+          jingdongKey: "京东云key",
+          awsKey: "亚马逊云key",
+          huoshanKey: "火山云key",
+          jinshanKey: "金山云key",
+          googleKey: "谷歌云key"
+        };
+
+        let hasContent = false;
+        
+        for (const [type, label] of Object.entries(types)) {
+          if (info[type] && info[type].length > 0) {
+            hasContent = true;
+            const header = document.createElement("div");
+            header.style.fontWeight = "bold";
+            header.style.marginTop = "10px";
+            header.style.color = "#2c3e50";
+            header.textContent = `${label} (${info[type].length})`;
+            container.appendChild(header);
+            
+            info[type].forEach(item => {
+              const p = document.createElement("p");
+              p.textContent = item;
+              p.style.marginTop = "5px";
+              container.appendChild(p);
+            });
+          }
+        }
+        
+        if (!hasContent) {
+          const p = document.createElement("p");
+          p.textContent = "未发现敏感信息";
+          p.style.color = "#666";
+          container.appendChild(p);
+        }
+      };
+
       if (isBlacklisted) {
         const tip = document.createElement("p");
         tip.textContent = "域名在黑名单中，不处理";
@@ -62,10 +109,12 @@ document.addEventListener('DOMContentLoaded', function () {
         domainContainer.appendChild(tip);
         urlContainer.appendChild(tip.cloneNode(true));
         ipContainer.appendChild(tip.cloneNode(true));
+        sensitiveContainer.appendChild(tip.cloneNode(true)); // 敏感信息面板添加提示
       } else {
         render(domainContainer, domainList);
         render(urlContainer, jsUrlList);
         render(ipContainer, ipList);
+        renderSensitive(sensitiveContainer, sensitiveInfo); // 渲染敏感信息
       }
     });
   });
@@ -141,12 +190,14 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // 读取黑名单和基础目录配置
-  chrome.storage.local.get(["blacklist_domains", "base_path"], (res) => {
+  chrome.storage.local.get(["blacklist_domains", "base_path", "notepad_content"], (res) => {
     const blacklist = res.blacklist_domains || [];
     const basePath = res.base_path || "";
+    const noteContent = res.notepad_content || "";
 
     document.getElementById("blacklistInput").value = blacklist.join("\n");
     document.getElementById("basePathInput").value = basePath;
+    document.getElementById("notepadInput").value = noteContent;
   });
 
   // 保存黑名单
@@ -166,5 +217,20 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  // 记事本功能 - 保存笔记
+  document.getElementById("saveNoteBtn").addEventListener("click", () => {
+    const content = document.getElementById("notepadInput").value;
+    chrome.storage.local.set({ notepad_content: content }, () => {
+      alert("笔记保存成功");
+    });
+  });
+
+  // 记事本功能 - 清空笔记
+  document.getElementById("clearNoteBtn").addEventListener("click", () => {
+    if (confirm("确定要清空笔记吗？")) {
+      document.getElementById("notepadInput").value = "";
+      chrome.storage.local.set({ notepad_content: "" });
+    }
+  });
 
 });
