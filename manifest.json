@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "LoveJS",
-    "version": "1.0",
+    "version": "1.1",
     "description": "发现隐藏接口 | 敏感信息发现 | 批量打开URL",
     "permissions": ["tabs","activeTab", "scripting", "storage","webRequest"],
     "background": {
