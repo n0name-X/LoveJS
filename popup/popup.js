@@ -70,7 +70,12 @@ document.addEventListener('DOMContentLoaded', function () {
           awsKey: "亚马逊云key",
           huoshanKey: "火山云key",
           jinshanKey: "金山云key",
-          googleKey: "谷歌云key"
+          googleKey: "谷歌云key",
+          idCard: "身份证号",
+          cookie: "Cookie",
+          url: "URL",
+          jwt: "JWT",
+          token: "Token"
         };
 
         let hasContent = false;
