@@ -148,7 +148,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     try {
       const baseUrl = new URL(currentPageUrl);
-      const baseDomain = `${baseUrl.protocol}//${baseUrl.hostname}`;
+      // 使用origin替代hostname，保留协议、主机名和端口
+      const baseDomain = baseUrl.origin;
 
       chrome.storage.local.get(["base_path"], (res) => {
         const basePath = res.base_path || "";
